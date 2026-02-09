@@ -1,0 +1,5 @@
+vendor/
+images/
+dist/
+*.min.css
+*.min.js

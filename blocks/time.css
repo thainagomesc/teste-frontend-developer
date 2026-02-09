@@ -1,0 +1,45 @@
+.time__grid {
+  margin-top: clamp(1.8rem, 5vw, 3rem);
+  display: grid;
+  gap: 1rem;
+}
+
+.time__card {
+  padding: 0.9rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  transition: transform 240ms ease, border-color 240ms ease;
+}
+
+.time__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 229, 255, 0.24);
+}
+
+.time__media {
+  width: 100%;
+  border-radius: calc(var(--radius-md) - 0.25rem);
+  background: #09090c;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.time__title {
+  margin: 0.85rem 0 0.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 768px) {
+  .time__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .time__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

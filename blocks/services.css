@@ -1,0 +1,46 @@
+.services__grid {
+  margin-top: clamp(1.8rem, 5vw, 3rem);
+  display: grid;
+  gap: 1rem;
+}
+
+.services__card {
+  position: relative;
+  padding: 1.4rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+
+.services__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 229, 255, 0.34);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.26);
+}
+
+.services__card-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.services__card-text {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+@media (min-width: 480px) {
+  .services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+}

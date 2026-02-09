@@ -1,0 +1,54 @@
+.cursor {
+  --cursor-x: -100px;
+  --cursor-y: -100px;
+  --cursor-scale: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1.05rem;
+  aspect-ratio: 1;
+  pointer-events: none;
+  z-index: 100;
+  transform: translate3d(var(--cursor-x), var(--cursor-y), 0) scale(var(--cursor-scale));
+  transition: transform 80ms linear, opacity 220ms ease;
+  opacity: 0;
+}
+
+.cursor__dot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 8px rgba(0, 229, 255, 0.12);
+}
+
+body.cursor-enabled {
+  cursor: none;
+}
+
+body.cursor-enabled a,
+body.cursor-enabled button,
+body.cursor-enabled input,
+body.cursor-enabled textarea,
+body.cursor-enabled label {
+  cursor: none;
+}
+
+.cursor.is-active {
+  opacity: 1;
+}
+
+.cursor.is-hover {
+  --cursor-scale: 1.6;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+
+  body.cursor-enabled {
+    cursor: auto;
+  }
+}

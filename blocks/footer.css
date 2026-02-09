@@ -1,0 +1,38 @@
+.footer {
+  padding: 2.4rem 0 2.6rem;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.footer__inner {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 6.2rem;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__link {
+  color: rgba(247, 248, 251, 0.8);
+  transition: color 180ms ease;
+}
+
+.footer__link:hover {
+  color: var(--color-accent);
+}
+
+.footer__copy {
+  margin: 0;
+  color: rgba(184, 189, 201, 0.75);
+  font-size: 0.86rem;
+}

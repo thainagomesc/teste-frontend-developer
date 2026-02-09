@@ -1,0 +1,14 @@
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/hero.css");
+@import url("../blocks/about.css");
+@import url("../blocks/services.css");
+@import url("../blocks/work.css");
+@import url("../blocks/time.css");
+@import url("../blocks/faq.css");
+@import url("../blocks/contact.css");
+@import url("../blocks/footer.css");
+@import url("../blocks/cursor.css");
+@import url("../blocks/animations.css");

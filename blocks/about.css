@@ -1,0 +1,35 @@
+.about__content {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.about__media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.about__image {
+  width: 100%;
+  min-height: 16rem;
+  object-fit: cover;
+  transform: scale(1.02);
+}
+
+.about__text {
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .about__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__content {
+    gap: 3rem;
+  }
+}
